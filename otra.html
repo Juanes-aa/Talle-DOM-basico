@@ -4,11 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejercicio 5: Presupuesto de un evento</title>
-
-  <!--
-    REQUISITO: vincula aquí tu propio archivo CSS.
-    Ejemplo: <link rel="stylesheet" href="estilos.css">
-  -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -54,26 +50,26 @@
 
   <form>
     <p>
-      <label>Número de invitados: <input type="number" placeholder="Número de invitados"></label>
+      <label>Número de invitados: <input id="num_invitados" type="number" placeholder="Número de invitados"></label>
     </p>
     <p>
-      <label>Costo de comida por invitado: <input type="number" placeholder="Costo de comida por invitado"></label>
+      <label>Costo de comida por invitado: <input id="costo_invitado" type="number" placeholder="Costo de comida por invitado"></label>
     </p>
     <p>
-      <label>Costo de bebida por invitado: <input type="number" placeholder="Costo de bebida por invitado"></label>
+      <label>Costo de bebida por invitado: <input id="bebida_invitado" type="number" placeholder="Costo de bebida por invitado"></label>
     </p>
     <p>
-      <label>Costo de decoración: <input type="number" placeholder="Costo de decoración"></label>
+      <label>Costo de decoración: <input id="costo_decoracion" type="number" placeholder="Costo de decoración"></label>
     </p>
     <p>
-      <label>Costo de música/animación: <input type="number" placeholder="Costo de música/animación"></label>
+      <label>Costo de música/animación: <input id="costo_musica" type="number" placeholder="Costo de música/animación"></label>
     </p>
     <p>
-      <label>Propina para el personal (%): <input type="number" placeholder="Propina para el personal (%)"></label>
+      <label>Propina para el personal (%): <input id="propina" type="number" placeholder="Propina para el personal (%)"></label>
     </p>
 
     <p>
-      <button type="button">Calcular presupuesto</button>
+      <button type="button" onclick="calcular_presupuesto()">Calcular presupuesto</button>
     </p>
   </form>
 
@@ -88,42 +84,38 @@
     <tbody>
       <tr>
         <td>Comida total</td>
-        <td></td>
+        <td id="comida_total" readonly></td>
       </tr>
       <tr>
         <td>Bebida total</td>
-        <td></td>
+        <td id="bebida_total" readonly></td>
       </tr>
       <tr>
         <td>Decoración</td>
-        <td></td>
+        <td id="decoracion_total" readonly></td>
       </tr>
       <tr>
         <td>Música/animación</td>
-        <td></td>
+        <td id="musica_total" readonly></td>
       </tr>
       <tr>
         <td>Subtotal</td>
-        <td></td>
+        <td id="subtotal" readonly></td>
       </tr>
       <tr>
         <td>Propina</td>
-        <td></td>
+        <td id="propina_total" readonly></td>
       </tr>
       <tr>
         <td>Total general</td>
-        <td></td>
+        <td id="total_pagar" readonly></td>
       </tr>
       <tr>
         <td>Costo por invitado</td>
-        <td></td>
+        <td id="costo_invitado_total" readonly></td>
       </tr>
     </tbody>
   </table>
-
-  <!--
-    REQUISITO: vincula aquí tu propio archivo JS.
-    Ejemplo: <script src="otra.js"></script>
-  -->
+  <script src="js/otra.js"></script>
 </body>
 </html>

@@ -4,11 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejercicio 1: Calculadora</title>
-
-  <!--
-    REQUISITO: vincula aquí tu propio archivo CSS.
-    Ejemplo: <link rel="stylesheet" href="estilos.css">
-  -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -38,27 +34,25 @@
 
   <form>
     <p>
-      <label>Número 1: <input type="number" placeholder="Número 1"></label>
+      <label>Número 1: <input id="num1" type="number" placeholder="Número 1"></label>
     </p>
     <p>
-      <label>Número 2: <input type="number" placeholder="Número 2"></label>
-    </p>
-
-    <p>
-      <button type="button">Sumar</button>
-      <button type="button">Restar</button>
-      <button type="button">Multiplicar</button>
-      <button type="button">Dividir</button>
+      <label>Número 2: <input id="num2" type="number" placeholder="Número 2"></label>
     </p>
 
     <p>
-      <label>Resultado: <input type="text" placeholder="Resultado" readonly></label>
+      <button type="button" onclick="suma()">Sumar</button>
+      <button type="button" onclick="resta()">Restar</button>
+      <button type="button" onclick="multiplicacion()">Multiplicar</button>
+      <button type="button" onclick="division()">Dividir</button>
+    </p>
+
+    <p>
+      <label>Resultado: <input id="resultado" type="text" placeholder="Resultado" readonly></label>
     </p>
   </form>
 
-  <!--
-    REQUISITO: vincula aquí tu propio archivo JS.
-    Ejemplo: <script src="calculadora.js"></script>
-  -->
+  <script src="js/calculadora.js"></script>
+
 </body>
 </html>
